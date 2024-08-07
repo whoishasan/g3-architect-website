@@ -6,3 +6,80 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Shared Styles Start */
+.display-flex {
+  display: flex;
+
+  /* dark 02 */
+  .text-gray {
+    color: #424242;
+  }
+  /* dark 03 */
+  .text-light-gray {
+    color: #727272;
+  }
+}
+.btn-primary {
+  color: white;
+  background-color: rgb(255, 144, 14);
+  font-size: 1.1rem;
+  font-weight: 600px;
+  padding: 18px 22px;
+  border: none;
+  border-radius: 8px;
+}
+
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* Header Styles Start */
+
+/* Navbar Related Styles Start */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar,
+.banner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Banner related style Start*/
+.banner-content {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 3.9rem;
+}
+.banner-image {
+  max-width: 100%;
+}
+
+/* responsive medias query */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-link {
+    flex-direction: column;
+  }
+}
