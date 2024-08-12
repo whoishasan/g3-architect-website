@@ -116,12 +116,57 @@ main > section {
 #Quick {
   font-weight: 500;
 }
+/* features section styles */
+#feature-section-title {
+  margin-top: 0px;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.features img {
+  max-width: 600px;
+  max-height: 900px;
+}
+.features {
+  gap: 80px;
+}
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.feature-card-container {
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.feature-card-container .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
+#experience-badge {
+  padding: 40px 36px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -120px;
+  margin-left: -100px;
+}
+
+#experience-year {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.featured-architect img {
+  width: 100%;
+}
 /* responsive medias query */
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-link,
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .team-img-container {
@@ -130,14 +175,23 @@ main > section {
   .our-feature {
     margin-left: 15px;
   }
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 /* mediam device design */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
     .our-feature {
       margin: 50 auto;
     }
+  }
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
